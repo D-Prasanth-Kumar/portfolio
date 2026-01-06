@@ -89,7 +89,7 @@ export default function EducationPage() {
                         <span className="text-sm font-mono text-neutral-500">2018 — 2020</span>
                       </div>
                       <div className="text-base text-neutral-600 dark:text-neutral-400 mb-4">
-                        Narayan Junior College, Visakhapatnam, India
+                        Narayana Junior College, Visakhapatnam, India
                       </div>
                       <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-sm sm:text-base">
                         Majors: Mathematics, Physics, Chemistry
