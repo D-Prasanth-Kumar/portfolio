@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
-import { FiPlay, FiPause } from 'react-icons/fi';
+import { FiPlay, FiPause, FiVolume2, FiVolumeX } from 'react-icons/fi'; 
 
 interface VideoCoverProps {
   src: string;
@@ -11,7 +11,8 @@ interface VideoCoverProps {
 
 export default function VideoCover({ src, poster, className = '' }: VideoCoverProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true); 
+  const [isMuted, setIsMuted] = useState(true);     
   const [progress, setProgress] = useState(0);
 
   // Toggle Play/Pause
@@ -27,6 +28,17 @@ export default function VideoCover({ src, poster, className = '' }: VideoCoverPr
     }
   };
 
+  // Toggle Mute/Unmute
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (videoRef.current) {
+      // Toggle the muted property on the video element
+      const newMutedState = !videoRef.current.muted;
+      videoRef.current.muted = newMutedState;
+      setIsMuted(newMutedState);
+    }
+  };
+
   const handleTimeUpdate = () => {
     if (videoRef.current) {
       const current = videoRef.current.currentTime;
@@ -37,7 +49,6 @@ export default function VideoCover({ src, poster, className = '' }: VideoCoverPr
     }
   };
 
-  // Handle user dragging the slider
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = parseFloat(e.target.value);
     setProgress(newValue); 
@@ -59,7 +70,8 @@ export default function VideoCover({ src, poster, className = '' }: VideoCoverPr
         poster={poster}
         className="w-full h-full object-contain"
         playsInline
-        muted={false}
+        autoPlay       // Starts automatically
+        muted={isMuted} 
         loop
         onClick={togglePlay}
         onTimeUpdate={handleTimeUpdate} 
@@ -82,7 +94,7 @@ export default function VideoCover({ src, poster, className = '' }: VideoCoverPr
         {/* BOTTOM CONTROLS BAR */}
         <div className="w-full p-4 flex items-center gap-4">
           
-          {/* Small Play Button */}
+          {/* Play/Pause Button */}
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -91,6 +103,14 @@ export default function VideoCover({ src, poster, className = '' }: VideoCoverPr
             className="text-white hover:text-neutral-300 transition-colors"
           >
             {isPlaying ? <FiPause size={20} /> : <FiPlay size={20} />}
+          </button>
+
+          {/* Volume Button */}
+          <button
+            onClick={toggleMute}
+            className="text-white hover:text-neutral-300 transition-colors"
+          >
+            {isMuted ? <FiVolumeX size={20} /> : <FiVolume2 size={20} />}
           </button>
 
           {/* Progress Slider */}
