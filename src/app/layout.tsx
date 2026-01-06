@@ -21,11 +21,11 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://prasanth.vercel.app'),
+  metadataBase: new URL('https://prasanth-techh.vercel.app'),
   title: 'Prasanth Kumar',
   description: 'Actively learning and eager to contribute to open-source software. Available for new opportunities.',
   openGraph: {
-    url: 'https://prasanth.vercel.app/',
+    url: 'https://prasanth-techh.vercel.app/',
     siteName: 'Prasanth Portfolio',
     locale: 'en_US',
     type: 'website',
