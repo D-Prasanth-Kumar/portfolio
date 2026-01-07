@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://prasanth-techh.vercel.app'),
   title: 'Prasanth Kumar',
   description: 'Actively learning and eager to contribute to open-source software. Available for new opportunities.',
+  icons: {
+    icon: '/logo_large.png',   
+  },
   openGraph: {
     url: 'https://prasanth-techh.vercel.app/',
     siteName: 'Prasanth Portfolio',
