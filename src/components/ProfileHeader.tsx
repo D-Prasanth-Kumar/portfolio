@@ -42,7 +42,7 @@ export default function ProfileHeader({
             {name}
           </h1>
           <p className="opacity-40 text-xs sm:text-sm">
-            {age} • {title}
+            {title}
           </p>
         </div>
         <div className="flex justify-start space-x-4 mt-3 sm:mt-0 px-0">
