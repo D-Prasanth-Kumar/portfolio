@@ -39,7 +39,7 @@ export default function NewHeroSection() {
           <Reveal delay={0.2}>
             <ProfileHeader 
               name="Prasanth Kumar"
-              age="23"
+            //  age="23"
               title="Master of Science in CS • Java Developer"
               profileImage="/pfp.jpeg"
               socialLinks={{
@@ -73,7 +73,7 @@ export default function NewHeroSection() {
               <Reveal delay={0.1}>
                 <ContentSection className="pb-6 sm:pb-8 pt-4 sm:pt-6 px-2 sm:px-0">
                   <ContentParagraph className="mb-2 text-base sm:text-lg">
-                    <span className="font-medium dark:text-white text-black"></span> I’m a software engineer with a backend focus and a strong interest for problem-solving and fundamentals. I enjoy designing clean systems that are correct, understandable, and built to last.
+                    <span className="font-medium dark:text-white text-black"></span> I’m a software developer with a backend focus and a strong interest for problem-solving and fundamentals. I enjoy designing clean systems that are correct, understandable, and built to last.
                   </ContentParagraph>
                   <ContentParagraph className="mb-2 text-base sm:text-lg">
                     <span className="font-medium dark:text-white text-black"></span> I prefer building from scratch and owning the full lifecycle of a project — not just writing features, but understanding the architecture, data flow, and decisions behind them. I care less about hype and more about doing things the right way.
