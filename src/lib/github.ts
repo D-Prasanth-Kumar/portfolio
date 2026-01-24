@@ -185,6 +185,15 @@ export const fallbackContributions: ProcessedContribution[] = [
     state: "merged"
   },
   {
+    title: "Feat: Add MonthPlausibilityComparator to prefer normalized months",
+    description: "Developed a comparator to prioritize normalized BibTeX month fields (e.g., `jun`) over hardcoded strings during merges, ensuring better standard compliance.",
+    repository: "JabRef",
+    link: "https://github.com/JabRef/jabref/pull/14629",
+    date: "2025",
+    type: "feature",
+    state: "merged" 
+  },
+  {
     title: "Feat: Add PersonNamesPlausibilityComparator for better merge accuracy",
     description: "Implemented a comparator logic to automatically select the most complete author list (based on count or length) during bibliographic entry merges, improving data consistency.",
     repository: "JabRef",
@@ -219,14 +228,5 @@ export const fallbackContributions: ProcessedContribution[] = [
     date: "2025",
     type: "bug",
     state: "merged"
-  },
-  {
-    title: "Feat: Add MonthPlausibilityComparator to prefer normalized months",
-    description: "Developed a comparator to prioritize normalized BibTeX month fields (e.g., `jun`) over hardcoded strings during merges, ensuring better standard compliance.",
-    repository: "JabRef",
-    link: "https://github.com/JabRef/jabref/pull/14629",
-    date: "2025",
-    type: "feature",
-    state: "closed" 
   }
 ]
