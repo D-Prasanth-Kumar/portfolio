@@ -24,7 +24,7 @@ export default function ProfileHeader({
     leetcode: "https://leetcode.com/u/D_Prasanth_Kumar/",
     github: "https://github.com/D-Prasanth-Kumar",
     linkedin: "https://www.linkedin.com/in/prasanthh-kumar/",
-    resume: "https://drive.google.com/file/d/10FRJE4n3VVVNokEF8NmSFyWTMpNsBT-w/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1sgIIax0qd24QYKzjEpMxCpVUt86TwuPV/view?usp=sharing",
   }
 }: ProfileHeaderProps) {
 
