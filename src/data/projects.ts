@@ -22,6 +22,25 @@ export const projects: Project[] = [
     ],
   }, 
   {
+    id: 'secure-link',
+    title: "SecureLink",
+    description: "A high-security, client-side encrypted vault for sharing temporary secrets with zero-knowledge architecture.",
+    longDescription: "SecureLink is a confidential data vault engineered for zero-knowledge privacy.\n\nClient-Side Security: Utilizes AES-256 encryption within the browser so that sensitive data is encrypted before it ever reaches the server. The decryption key remains in the URL fragment (#) and is never sent to the backend.\n\nBackend & Infrastructure: Powered by a Java Spring Boot microservice containerized with Docker and deployed on Render. Leverages MongoDB Atlas for highly available cloud data storage.\n\nKey Features: Implements a '3-Strike' security protocol (auto-destruction after 3 failed PIN attempts), time-based expiration (TTL), manual 'Burn on Read' functionality, and dynamic QR code generation for secure mobile sharing.",
+    liveLink: "https://secure-link-vault.vercel.app", 
+    githubLink: "https://github.com/D-Prasanth-Kumar/SecureLink",
+    video: 'https://res.cloudinary.com/dfbtpurol/video/upload/v1770984268/Screen_Recording_2026-02-13_172919_jncqsd.mp4',
+    image: '/images/securelink.png', 
+    tags: [
+      "Java",
+      "Spring Boot",
+      "MongoDB",
+      "Docker",
+      "React",
+      "AES-256",
+      "Web Crypto API"
+    ],
+  },
+  {
     id: 'land-parameter-device',
     title: "Land Parameter Device (IoT & ML)",
     description: "Portable IoT device using ESP32 and Machine Learning to analyze soil health and predict crop suitability in real-time.",
