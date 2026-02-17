@@ -76,7 +76,7 @@ export default function NewHeroSection() {
                     <span className="font-medium dark:text-white text-black"></span> I’m a software developer with a backend focus and a strong interest for problem-solving and fundamentals. I enjoy designing clean systems that are correct, understandable, and built to last.
                   </ContentParagraph>
                   <ContentParagraph className="mb-2 text-base sm:text-lg">
-                    <span className="font-medium dark:text-white text-black"></span> I prefer building from scratch and owning the full lifecycle of a project — not just writing features, but understanding the architecture, data flow, and decisions behind them. I care less about hype and more about doing things the right way.
+                    <span className="font-medium dark:text-white text-black"></span> I prefer building from scratch and owning the full lifecycle of a project, not just writing features, but understanding the architecture, data flow, and decisions behind them. I care less about hype and more about doing things the right way.
                   </ContentParagraph>
                   <ContentParagraph className="mb-2 text-base sm:text-lg">
                     <span className="font-medium dark:text-white text-black"></span> I’m constantly learning, questioning, and refining my approach, with one goal in mind: becoming a better engineer and building meaningful solutions that people enjoy using.
@@ -141,7 +141,7 @@ export default function NewHeroSection() {
                       <span className="font-medium dark:text-white text-black"></span> I focus on translating real problems into reliable backend behavior. My contributions typically involve analyzing existing workflows, tightening decision logic, and improving how systems handle data, edge cases, and user-driven scenarios.
                     </ContentParagraph>
                     <ContentParagraph className="text-sm sm:text-base">
-                      <span className="font-medium dark:text-white text-black"> </span> I enjoy working on changes that sit close to core functionality — where small improvements have a noticeable impact on correctness, consistency, and overall system quality.
+                      <span className="font-medium dark:text-white text-black"> </span> I enjoy working on changes that sit close to core functionality, where small improvements have a noticeable impact on correctness, consistency, and overall system quality.
                     </ContentParagraph>
                   </div>
                 </div>
