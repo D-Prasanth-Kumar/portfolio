@@ -176,6 +176,15 @@ export async function fetchUserPullRequests(username: string, limit: number = 50
 // Fallback data in case API fails
 export const fallbackContributions: ProcessedContribution[] = [
   {
+    title: "Fix: Resolve undefined version in download links and update package names",
+    description: "Fixed a bug where download links generated a `vundefined` URL by adding a safe fallback to the latest releases page. Updated macOS package naming conventions, added Linux ARM support, and ensured backward compatibility for v5.x versions.",
+    repository: "JabRefOnline",
+    link: "https://github.com/JabRef/JabRefOnline/pull/2871",
+    date: "2026",
+    type: "bug",
+    state: "merged"
+  },
+  {
     title: "Fix: Improve arXiv identifier detection from pasted URLs",
     description: "Enhanced arXiv identifier recognition by adding a findInText() method that correctly extracts identifiers from pasted arXiv URLs, including HTML links with fragments. Updated identifier detection flow and added comprehensive unit tests.",
     repository: "JabRef",
