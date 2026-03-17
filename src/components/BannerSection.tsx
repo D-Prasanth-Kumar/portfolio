@@ -9,7 +9,7 @@ interface BannerSectionProps {
 }
 
 export default function BannerSection({ 
-  quote = "Contribute • Learn • Improve",
+  quote = "Striving for deeper understanding",
   bannerImage = "/mountain.jpg"
 }: BannerSectionProps) {
   return (

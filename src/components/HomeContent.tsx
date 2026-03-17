@@ -31,7 +31,7 @@ export default function NewHeroSection() {
           <Reveal delay={0.1}>
             <BannerSection 
               bannerImage="/mountain.jpg"
-              quote="Contribute • Learn • Improve"
+              quote="Striving for deeper understanding"
             />
           </Reveal>
           
