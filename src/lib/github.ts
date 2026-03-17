@@ -176,6 +176,15 @@ export async function fetchUserPullRequests(username: string, limit: number = 50
 // Fallback data in case API fails
 export const fallbackContributions: ProcessedContribution[] = [
   {
+    title: "Feat: CLI Support for Field Formatters in Export Commands",
+    description: "Added a `--field-formatters` option to the `convert` and `generate-bib-from-aux` CLI commands. This enables users to run JabRef's field formatters directly from the command line when exporting files, allowing for seamless cleanup of .bib files for publication without needing to open the GUI or alter the main database.",
+    repository: "JabRef",
+    link: "https://github.com/JabRef/jabref/pull/15184",
+    date: "2026",
+    type: "feature",
+    state: "merged"
+  },
+  {
     title: "Fix: Resolve undefined version in download links and update package names",
     description: "Fixed a bug where download links generated a `vundefined` URL by adding a safe fallback to the latest releases page. Updated macOS package naming conventions, added Linux ARM support, and ensured backward compatibility for v5.x versions.",
     repository: "JabRefOnline",
