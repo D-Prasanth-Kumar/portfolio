@@ -22,6 +22,22 @@ export const projects: Project[] = [
     ],
   }, 
   {
+    id: 'gotomock',
+    title: "GoToMock",
+    description: "",
+    longDescription: "",
+    liveLink: "https://gotomock.vercel.app/",
+    githubLink: "https://github.com/D-Prasanth-Kumar/GoToMock",
+    video: '',
+    image: '/images/gtm.png',
+    tweetUrl: "",
+    tags: [
+      "Java", 
+      "Spring Boot", 
+      "WebRTC"
+    ],
+  },
+  {
     id: 'secure-link',
     title: "SecureLink",
     description: "A high-security, client-side encrypted vault for sharing temporary secrets with zero-knowledge architecture.",
